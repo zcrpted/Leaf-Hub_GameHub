@@ -1,0 +1,243 @@
+local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
+local Window = Rayfield:CreateWindow({
+   Name = "<[|{🕹️Leaf Hub | GameHub🎮}|]>",
+   LoadingTitle = "<|{🕹️Leaf Hub | GameHub🎮}|>",
+   LoadingSubtitle = "by leafzcrpt",
+   ConfigurationSaving = {
+      Enabled = true,
+      FolderName = nil, -- Create a custom folder for your hub/game
+      FileName = "leafhubGAMEHUB"
+   },
+   Discord = {
+      Enabled = false,
+      Invite = "noinvitelink", -- The Discord invite code, do not include discord.gg/. E.g. discord.gg/ABCD would be ABCD
+      RememberJoins = true -- Set this to false to make them join the discord every time they load it up
+   },
+   KeySystem = false, -- Set this to true to use our key system
+   KeySettings = {
+      Title = "Untitled",
+      Subtitle = "Key System",
+      Note = "No method of obtaining the key is provided",
+      FileName = "Key", -- It is recommended to use something unique as other scripts using Rayfield may overwrite your key file
+      SaveKey = true, -- The user's key will be saved, but if you change the key, they will be unable to use your script
+      GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
+      Key = {"Hello"} -- List of keys that will be accepted by the system, can be RAW file links (pastebin, github etc) or simple strings ("hello","key22")
+   }
+})
+local MainTab = Window:CreateTab("DOOMSPIRE_BRICKBATTLE", 4483362458) -- Title, Image
+local Button = MainTab:CreateButton({
+   Name = "LeafHub_DOOMSPIREv1.0.exe",
+   Interact = 'Click',
+   Callback = function()
+				loadstring(game:HttpGet("https://pastebin.com/raw/2rY7ZYbP"))()
+   end,
+})
+local Tab = Window:CreateTab("THECHOSEN_ONE", 4483362458) -- Title, Image
+local Button = Tab:CreateButton({
+   Name = "LAZIEST.V3_chosenONE.txt",
+   Interact = 'Click',
+   Callback = function()
+				loadstring(game:HttpGet("https://rawscripts.net/raw/The-Chosen-One-laziest-V2-7696"))()
+   end,
+})
+local Tab = Window:CreateTab("THESTRONGEST_BATTLEGROUNDS", 4483362458) -- Title, Image
+local Button = Tab:CreateButton({
+   Name = "Reaper_Voltra.exe - Equip Sonic",
+   Interact = 'Click',
+   Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Reapvitalized/TSB/refs/heads/main/VOLTA.lua"))()
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Sonic_To_Toji.Scripthub",
+   Interact = 'Click',
+   Callback = function()
+loadstring(game:HttpGet"https://raw.githubusercontent.com/Wi-sp/Limitless-legacy/refs/heads/main/GUI")()
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Shinjuku_Yuji.lua - Equip Garou",
+   Interact = 'Click',
+   Callback = function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/Kenjihin69/Kenjihin69/refs/heads/main/Yuji%20early%20access'))()
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "ACAURA_V2.lua - Equip Garou",
+   Interact = 'Click',
+   Callback = function()
+getgenv().OptimizeUltimate = true
+--self explanatory
+getgenv().ReduceUltFlash = true
+--self explanatory
+getgenv().Move1Insta = false
+--set it to false if you dont want the first move to instant kill
+getgenv().LowQualityMode = false
+--set to true if you have a shit pc (like me)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Reapvitalized/TSB/refs/heads/main/ARCAURA.lua"))()
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Apophenia_Moveset_v2.lua - Equip Metal bat",
+   Interact = 'Click',
+   Callback = function()
+loadstring(game:HttpGet("https://pastebin.com/raw/CzZy2eDe"))()
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Gojo.exe - equip saitama",
+   Interact = 'Click',
+   Callback = function()
+_G.settings = {
+    ["RedStartupId"] = "rbxassetid://1177475221",
+    ["RedHitId"] = "rbxassetid://8625377966",
+}
+loadstring(game:HttpGet("https://raw.githubusercontent.com/skibiditoiletfan2007/OtherScripts/main/BaldyToSorcerer/latest.lua"))()
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "PHANTASMHUB.exe",
+   Interact = 'Click',
+   Callback = function()
+if game.GameId == 3808081382 then
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/ATrainz/main/main/TSB.lua"))()
+elseif game.GameId == 5868588140 then
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/ATrainz/main/main/RealmRampage.lua"))()
+else
+  game:GetService("StarterGui"):SetCore("SendNotification", {Title = "(PHANTASM)", Text = "This game is not supported.", Duration = 10})
+end
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "KadeHub.rar",
+   Interact = 'Click',
+   Callback = function()
+getgenv().DisableWarning = true
+getgenv().AutoReport = true
+if getgenv().KadeHubLoaded ~= true then
+    getgenv().KadeHubLoaded = true
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/skibiditoiletfan2007/KadeHubRepository/main/Latest.lua"))()
+else
+    game.StarterGui:SetCore("SendNotification",  {
+        Title = "KadeHub";
+        Text = "KadeHub is already executed!";
+        Icon = "rbxassetid://17893547380";
+        Duration = 15;
+    })
+end
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Goku_UltraInstinct.exe - equip Garou",
+   Interact = 'Click',
+   Callback = function()
+getgenv().morph = false -- turn false to true if you want custom accessories
+loadstring(game:HttpGet("https://rawscripts.net/raw/The-Strongest-Battlegrounds-Goku-Moveset-V2-17977"))()
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Sukuna.lua - equip Atomic samurai",
+   Interact = 'Click',
+   Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/zyrask/Nexus-Base/main/atomic-blademaster%20to%20sukuna"))()
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Toji.VOL - equip Atomic samurai",
+   Interact = 'Click',
+   Callback = function()
+--[[
+	WARNING: Heads up! This script has not been verified by ScriptBlox. Use at your own risk!
+]]
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Giahao135/Tojifushiguro/refs/heads/main/Togiiiii"))()
+   end,
+})
+local Tab = Window:CreateTab("Prison_Life", 4483362458) -- Title, Image
+local Button = Tab:CreateButton({
+   Name = "PRISONWARE.V1.3.rar",
+   Interact = 'Click',
+   Callback = function()
+				loadstring(game:HttpGet("https://raw.githubusercontent.com/Denverrz/scripts/master/PRISONWARE_v1.3.txt"))()
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "FE_BYPASSGUI.txt",
+   Interact = 'Click',
+   Callback = function()
+				loadstring("\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\116\112\71\101\116\40\34\104\116\116\112\115\58\47\47\114\97\119\46\103\105\116\104\117\98\117\115\101\114\99\111\110\116\101\110\116\46\99\111\109\47\103\48\48\108\88\112\108\111\105\116\101\114\47\103\48\48\108\88\112\108\111\105\116\101\114\47\109\97\105\110\47\70\101\37\50\48\98\121\112\97\115\115\34\44\32\116\114\117\101\41\41\40\41\10")()
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "ArDrak:Hub.rar",
+   Interact = 'Click',
+   Callback = function()
+--[[
+	WARNING: Heads up! This script has not been verified by ScriptBlox. Use at your own risk!
+]]
+				loadstring(game:HttpGet("https://raw.githubusercontent.com/Hungtu2121/Mygame/main/ArDrakHubPrisonlife"))() 
+   end,
+})
+local Tab = Window:CreateTab("BROOKHAVEN", 4483362458) -- Title, Image
+local Button = Tab:CreateButton({
+   Name = "🎛️RoChips Panel🥔",
+   Interact = 'Click',
+   Callback = function()
+				if "Rochips Loader" then 	local Rochips_panel,v,u,i=loadstring,"/snippets","gwwv","/raw/main.lua" ; 	Rochips_panel(game:HttpGet("https://glot.io"..v.."/" ..u.."877ga3"..i))(); 	return "it will load in around 3 - 131 seconds" end
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "IMPERIAL_HUB.net",
+   Interact = 'Click',
+   Callback = function()
+loadstring(game:HttpGet(("https://raw.githubusercontent.com/Trev0rZ/LoaderM/main/ImperialHub-Working.lua"),true))()
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "KAOVHUB.lua",
+   Interact = 'Click',
+   Callback = function()
+				loadstring(game:HttpGet("https://raw.githubusercontent.com/Koryxha/Kaov/main/KaovHub.md"))()
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "R@4HUB.elite",
+   Interact = 'Click',
+   Callback = function()
+				loadstring(game:HttpGet('https://raw.githubusercontent.com/M1ZZ001/BrookhavenR4D/main/Brookhaven%20R4D%20Script'))()
+   end,
+})
+local Tab = Window:CreateTab("MURDERMYSTERY2", 4483362458) -- Title, Image
+local Button = Tab:CreateButton({
+   Name = "SYMPHONYHUB.onion",
+   Interact = 'Click',
+   Callback = function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/proplayer123-z/symphony-hub/main/SymphonyHub.lua'))()
+   end,
+})
+local Tab = Window:CreateTab("LUCKYBLOCKS_BATTLEGROUND", 4483362458) -- Title, Image
+local Button = Tab:CreateButton({
+   Name = "Harlen_Hub-V.1.0.lua",
+   Interact = 'Click',
+   Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/harlenscripts/HarlenHub/main/HarlenScripts"))()
+   end,
+})
+local Tab = Window:CreateTab("BROOKLYN_PROJECTS", 4483362458) -- Title, Image
+local Button = Tab:CreateButton({
+   Name = "infinite-money.LZ",
+   Interact = 'Click',
+   Callback = function()
+--[[
+	WARNING: Heads up! This script has not been verified by ScriptBlox. Use at your own risk!
+]]
+loadstring(game:HttpGet("https://raw.githubusercontent.com/cnzins1/scripts/refs/heads/main/brooklynprojectsinfcash"))()
+   end,
+})
+local Tab = Window:CreateTab("↩️Back To Hub↩️", 4483362458) -- Title, Image
+local Button = Tab:CreateButton({
+   Name = "Back To Leaf_Hub",
+   Interact = 'Click',
+   Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/zcrpted/Leaf-Hub_Reborn/refs/heads/main/%3C%5B%7B🍃Leaf%20Hub%20%7C%20Reborn🍂%7D%5D%3E"))()
+   end,
+})
