@@ -238,6 +238,6 @@ local Button = Tab:CreateButton({
    Name = "Back To Leaf_Hub",
    Interact = 'Click',
    Callback = function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/zcrpted/Leaf-Hub_Reborn/refs/heads/main/%3C%5B%7B🍃Leaf%20Hub%20%7C%20Reborn🍂%7D%5D%3E"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/zcrpted/Leaf-Hub_Reborn/refs/heads/main/%3C%5B%7C%7B🍃Leaf%20Hub%20%7C%20Reborn🍂%7D%7C%5D%3E"))()
    end,
 })
